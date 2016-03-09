@@ -58,9 +58,10 @@ parameters:
       Required: Server image used for all servers that are created as a part of
       this deployment.
     type: string
-    default: Ubuntu 14.04 LTS (Trusty Tahr) (PVHVM)
+    default: CentOS 7 (PVHVM)
     constraints:
     - allowed_values:
+      - CentOS 7 (PVHVM)
       - Ubuntu 14.04 LTS (Trusty Tahr) (PVHVM)
       description: Must be a supported operating system.
 
