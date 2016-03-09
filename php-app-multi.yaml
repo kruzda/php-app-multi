@@ -83,9 +83,10 @@ parameters:
       Required: Server image used for all servers that are created as a part of
       this deployment.
     type: string
-    default: Ubuntu 14.04 LTS (Trusty Tahr) (PVHVM)
+    default: CentOS 7 (PVHVM)
     constraints:
     - allowed_values:
+      - CentOS 7 (PVHVM)
       - Ubuntu 14.04 LTS (Trusty Tahr) (PVHVM)
       description: Must be a supported operating system.
 
@@ -190,7 +191,7 @@ parameters:
     label: Child Template
     description: Location of child template for provisioning PHP web nodes.
     type: string
-    default: https://raw.github.com/rackspace-orchestration-templates/php-app-multi/master/php-app-single.yaml
+    default: https://raw.githubusercontent.com/kruzda/php-app-multi/master/php-app-single.yaml
 
 resources:
 
